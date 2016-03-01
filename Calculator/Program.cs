@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalcClass;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,10 @@ namespace Calculator
         {
             Console.WriteLine("Hello Calculator");
 
-            Console.WriteLine("Test");
+            Operatori suma = new Operatori();
+            int nesto = suma.Add(5, 6);
+
+            Console.WriteLine("Rezultat je: {0}", nesto);
         }
     }
 }
